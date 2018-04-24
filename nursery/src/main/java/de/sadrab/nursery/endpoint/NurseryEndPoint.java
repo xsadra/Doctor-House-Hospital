@@ -34,8 +34,8 @@ public class NurseryEndPoint {
         print(patient, "Patient: ");
         Patient cured = nurse.treatment(patient);
         print(cured,"Cured: ");
-//        Patient result = restTemplate.postForObject(accountancyUrl, cured, Patient.class);
-//        print(result, "Result: ");
+        restTemplate.postForObject(accountancyUrl, cured, Patient.class);
+        //print(result, "Result: ");
         Patient savedPatient = patientRepository.save(cured);
         print(savedPatient, "SavedPatient: ");
         return savedPatient;
