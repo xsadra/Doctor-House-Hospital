@@ -1,0 +1,3 @@
+bronchitis;cough,fever
+catarrh;runny nose,cough
+lactose intolerance;diarrhoea,flatulence
