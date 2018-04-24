@@ -31,17 +31,10 @@ public class NurseryEndPoint {
 
     @PostMapping
     Patient getPatient(@RequestBody Patient patient) {
-        print(patient, "Patient: ");
-        Patient cured = nurse.treatment(patient);
-        print(cured,"Cured: ");
-        restTemplate.postForObject(accountancyUrl, cured, Patient.class);
-        //print(result, "Result: ");
-        Patient savedPatient = patientRepository.save(cured);
-        print(savedPatient, "SavedPatient: ");
-        return savedPatient;
-    }
 
-    private void print(Object obj, String text) {
-        System.out.printf("\n" + text + obj.toString());
+        Patient cured = nurse.treatment(patient);
+        restTemplate.postForObject(accountancyUrl, cured, Patient.class);
+        Patient savedPatient = patientRepository.save(cured);
+        return savedPatient;
     }
 }

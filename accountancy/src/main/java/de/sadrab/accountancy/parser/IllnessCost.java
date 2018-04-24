@@ -1,4 +1,4 @@
-package de.sadrab.nursery.parser;
+package de.sadrab.accountancy.parser;
 
 
 import org.springframework.core.io.Resource;
@@ -13,21 +13,21 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-
-public class TreatmentEncyclopedia {
+//@RequiredArgsConstructor
+public class IllnessCost {
     private final ResourceLoader resourceLoader;
 
-    public TreatmentEncyclopedia(ResourceLoader resourceLoader) {
+    public IllnessCost(ResourceLoader resourceLoader) {
         this.resourceLoader = resourceLoader;
     }
 
-    public Map<String, List<String>> getTreatments() {
-        Map<String, List<String>> map = new HashMap<>();
-        Resource resource = resourceLoader.getResource("classpath:treatments.txt");
+    public Map<String, Double> getCost() {
+        Map<String, Double> map = new HashMap<>();
+        Resource resource = resourceLoader.getResource("classpath:cost.txt");
         try {
             Files.lines(resource.getFile().toPath())
                     .map(line -> line.split(";"))
-                    .forEach(e -> map.put(e[0], Arrays.asList(e[1].split(","))));
+                    .forEach(e -> map.put(e[0], Double.parseDouble(e[1])));
         } catch (IOException e) {
             e.printStackTrace();
         }

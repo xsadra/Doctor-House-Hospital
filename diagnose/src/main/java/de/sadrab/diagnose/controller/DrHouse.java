@@ -9,7 +9,7 @@ import java.util.Map;
 
 @Controller
 public class DrHouse {
-    //private Patient patient;
+
     private IllnessParser illnessParser;
 
     public DrHouse(IllnessParser illnessParser) {

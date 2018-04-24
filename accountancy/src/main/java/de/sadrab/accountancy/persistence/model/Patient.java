@@ -13,6 +13,7 @@ public class Patient {
     private String patientId;
     private String name;
     private String illness;
+    private String treatment;
 
     public Long getId() {
         return id;
@@ -46,6 +47,14 @@ public class Patient {
         this.illness = illness;
     }
 
+    public String getTreatment() {
+        return treatment;
+    }
+
+    public void setTreatment(String treatment) {
+        this.treatment = treatment;
+    }
+
     @Override
     public String toString() {
         return "Patient{" +
@@ -53,6 +62,7 @@ public class Patient {
                 ", patientId='" + patientId + '\'' +
                 ", name='" + name + '\'' +
                 ", illness='" + illness + '\'' +
+                ", treatment='" + treatment + '\'' +
                 '}';
     }
 }

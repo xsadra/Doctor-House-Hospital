@@ -27,9 +27,7 @@ public class DiagnoseEndPoint {
 
     @PostMapping
     Patient getPatient(@RequestBody Patient patient) {
-        System.out.printf("\nPatient :" + patient);
         Patient drHouseDiagnoses = drHouse.diagnose(patient);
-        System.out.printf("\nPatient Add Illness:" + drHouseDiagnoses);
         restTemplate.postForEntity(nurseryUrl,drHouseDiagnoses,Void.class);
         return patient;
     }

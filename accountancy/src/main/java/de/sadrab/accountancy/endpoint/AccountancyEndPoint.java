@@ -1,5 +1,6 @@
 package de.sadrab.accountancy.endpoint;
 
+import de.sadrab.accountancy.controller.Cost;
 import de.sadrab.accountancy.persistence.model.Invoice;
 import de.sadrab.accountancy.persistence.model.Patient;
 import de.sadrab.accountancy.persistence.repository.InvoiceRepository;
@@ -11,25 +12,28 @@ import java.util.List;
 
 @RestController
 @RequestMapping
-public class NurseryEndPoint {
+public class AccountancyEndPoint {
 
     private PatientRepository patientRepository;
     private InvoiceRepository invoiceRepository;
+    private Cost cost;
 
-    public NurseryEndPoint(PatientRepository patientRepository, InvoiceRepository invoiceRepository) {
+    public AccountancyEndPoint(PatientRepository patientRepository, InvoiceRepository invoiceRepository, Cost cost) {
         this.patientRepository = patientRepository;
         this.invoiceRepository = invoiceRepository;
+        this.cost = cost;
     }
 
     @PostMapping("/patients")
     void getPatient(@RequestBody Patient patient) {
-        System.out.printf("\nPatient: " + patient);
         Patient savePatient = patientRepository.save(patient);
-        System.out.printf("\nsavePatient: " + savePatient);
-        Invoice invoice = new Invoice(100.0, LocalDateTime.now(), savePatient);
-        System.out.printf("\nInvoice: " + invoice);
-        Invoice saveInvoice = invoiceRepository.save(invoice);
-        System.out.printf("\nsaceInvoice: " + saveInvoice);
+        Invoice invoice = newInvoice(savePatient);
+        invoiceRepository.save(invoice);
+    }
+
+    private Invoice newInvoice(Patient patient) {
+        Double cost = this.cost.getCost(patient);
+        return new Invoice(cost, LocalDateTime.now(), patient);
     }
 
     @GetMapping("/invoices")

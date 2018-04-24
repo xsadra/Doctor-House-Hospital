@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 @Controller
 public class Nurse {
-    //private Patient patient;
+
     private TreatmentEncyclopedia treatmentEncyclopedia;
 
     public Nurse(TreatmentEncyclopedia treatmentEncyclopedia) {

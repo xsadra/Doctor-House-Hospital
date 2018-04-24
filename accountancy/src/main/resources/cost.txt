@@ -1,0 +1,3 @@
+bronchitis;79.99
+catarrh;10
+lactose intolerance;36.49
