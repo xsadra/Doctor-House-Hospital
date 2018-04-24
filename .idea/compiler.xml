@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="admission" />
         <module name="diagnose" />
+        <module name="nursery" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
