@@ -1,7 +1,7 @@
 package de.sadrab.UI.view;
 
 import de.sadrab.UI.controller.PatientController;
-import de.sadrab.UI.model.Patient;
+import de.sadrab.UI.model.LocalPatient;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,13 +16,13 @@ public class HomeController {
     }
 
     @ModelAttribute("newPatient")
-    Patient patient() {
-        return new Patient();
+    LocalPatient patient() {
+        return new LocalPatient();
     }
 
-    @PostMapping("/home")
-    String newPatient(Patient patient) {
-        patientController.addNewPatient(patient);
+    @PostMapping("/")
+    String newPatient(LocalPatient localPatient) {
+        patientController.addNewPatient(localPatient);
         return "redirect:/";
     }
 
