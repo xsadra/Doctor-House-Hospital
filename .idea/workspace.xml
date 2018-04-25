@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32cf11d-6724-401c-b414-ffd8043589ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/controller/InvoicesGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/model/Invoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/model/LocalInvoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/model/LocalPatient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/templates/_home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/configuration/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/view/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/view/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/view/invoicesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/view/invoicesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UI/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI/src/main/resources/templates/invoices.html" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/resources/templates/invoices.html" afterDir="false" />
     </list>
@@ -30,12 +31,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/src/main/resources/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="208" column="17" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
+            <state relative-caret-position="294">
+              <caret line="208" column="67" selection-start-line="208" selection-start-column="67" selection-end-line="208" selection-end-column="67" />
               <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
@@ -45,11 +47,59 @@
       <file leaf-file-name="invoices.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/src/main/resources/templates/invoices.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="207" column="12" selection-start-line="207" selection-start-column="12" selection-end-line="209" selection-end-column="17" />
+            <state relative-caret-position="294">
+              <caret line="209" column="67" selection-start-line="209" selection-start-column="67" selection-end-line="209" selection-end-column="67" />
               <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UI/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="221" column="85" selection-start-line="221" selection-start-column="85" selection-end-line="221" selection-end-column="85" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#5896#5903#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebMvcConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/configuration/WebMvcConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoicesController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/view/invoicesController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -111,12 +161,15 @@
         <option value="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/controller/InvoicesGenerator.java" />
         <option value="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/view/HomeController.java" />
         <option value="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/controller/PatientController.java" />
-        <option value="$PROJECT_DIR$/UI/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/diagnose/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/admission/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/nursery/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/UI/src/main/resources/templates/invoices.html" />
+        <option value="$PROJECT_DIR$/UI/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/UI/pom.xml" />
+        <option value="$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/configuration/WebMvcConfiguration.java" />
         <option value="$PROJECT_DIR$/UI/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/UI/src/main/resources/templates/invoices.html" />
+        <option value="$PROJECT_DIR$/UI/src/main/resources/templates/login.html" />
       </list>
     </option>
   </component>
@@ -144,9 +197,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="390" />
-    <option name="width" value="1400" />
-    <option name="height" value="1040" />
+    <option name="x" value="170" />
+    <option name="width" value="1750" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -285,10 +338,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Sadra\Desktop\Projects\javaProjects\Doctor-House-Hospital\UI\src\main\java\de\sadrab\UI\configuration" />
+      <recent name="C:\Users\Sadra\Desktop\Projects\javaProjects\Doctor-House-Hospital\UI\src\main\resources\templates" />
       <recent name="C:\Users\Sadra\Desktop\Projects\javaProjects\Doctor-House-Hospital\accountancy\src\main\java\de\sadrab\accountancy" />
       <recent name="C:\Users\Sadra\Desktop\Projects\javaProjects\Doctor-House-Hospital\nursery\src\main\java\de\sadrab\nursery" />
       <recent name="C:\Users\Sadra\Desktop\Projects\javaProjects\Doctor-House-Hospital\diagnose\src\main\java\de\sadrab\diagnose" />
-      <recent name="C:\Users\Sadra\Desktop\Projects\javaProjects\Doctor-House-Hospital\diagnose\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="de.sadrab.UI.model" />
@@ -451,11 +504,11 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3295302" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.27683616" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.28672317" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3601695" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19865772" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17583893" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32909605" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -487,37 +540,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nursery/src/main/java/de/sadrab/nursery/NurseryApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nursery/src/main/java/de/sadrab/nursery/controller/Nurse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accountancy/src/main/java/de/sadrab/accountancy/configuration/RestConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accountancy/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accountancy/src/main/java/de/sadrab/accountancy/AccountancyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -876,19 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/view/invoicesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/view/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -913,13 +922,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" selection-start-column="44" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -974,22 +976,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI/src/main/resources/templates/invoices.html">
+    <entry file="file://$PROJECT_DIR$/UI/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="207" column="12" selection-start-line="207" selection-start-column="12" selection-end-line="209" selection-end-column="17" />
+        <state relative-caret-position="63">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/configuration/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="46" />
           <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/view/invoicesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/src/main/java/de/sadrab/UI/configuration/WebMvcConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/src/main/resources/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="208" column="17" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
+        <state relative-caret-position="294">
+          <caret line="208" column="67" selection-start-line="208" selection-start-column="67" selection-end-line="208" selection-end-column="67" />
           <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/src/main/resources/templates/invoices.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="209" column="67" selection-start-line="209" selection-start-column="67" selection-end-line="209" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="221" column="85" selection-start-line="221" selection-start-column="85" selection-end-line="221" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#5896#5903#1" expanded="true" />
           </folding>
         </state>
       </provider>

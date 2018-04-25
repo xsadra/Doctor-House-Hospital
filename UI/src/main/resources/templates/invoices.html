@@ -2,7 +2,8 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <!-- Theme Made By www.w3schools.com - No Copyright -->
-    <title>Bootstrap Theme Company Page</title>
+    <title>Invoices - Doctor House Hospital</title>
+    <link rel="icon" type="image/png" href="https://www.shareicon.net/data/512x512/2015/11/01/665295_medical_512x512.png" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -205,9 +206,9 @@
             <a class="navbar-brand" href="#myPage">Sadra</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
+            <form class="navbar-form navbar-right" th:action="@{/logout}" method="post">
+                <button type="submit" class="btn  btn-sm btn-danger"><span class="glyphicon glyphicon-log-out"></span> Logout</button>
+            </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/invoices">Invoices</a></li>
